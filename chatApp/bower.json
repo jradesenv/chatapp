@@ -1,0 +1,19 @@
+{
+  "name": "chat-app",
+  "version": "0.0.0",
+  "authors": [
+    "Jean Robert Alves <jradesenv@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/libs/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7"
+  }
+}
