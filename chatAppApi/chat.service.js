@@ -97,6 +97,7 @@ module.exports = function(db){
 	function Usuario(nome, cor){
 		this.nome = nome;
 		this.cor = cor;
+		this.keepAlive = new Date();
 	}
 	
 	function Mensagem(usuario, msg){

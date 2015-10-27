@@ -25,12 +25,14 @@ module.exports = function(app, service){
 	// service.logarUsuario = logarUsuario;
 	app.post('/usuario', function(requisicao, resposta){
 		var usuario = service.logarUsuario(requisicao.body.nome, requisicao.body.cor);
+		console.log("usuário '" + requisicao.body.nome + "' entrou!");
 		resposta.send(usuario);
 	});
 	
 	// service.deslogarUsuario = deslogarUsuario;
 	app.post('/usuario/delete', function(requisicao, resposta){
 		var retorno = service.deslogarUsuario(requisicao.body.usuario);
+		console.log("usuário '" + requisicao.body.usuario.nome + "' saiu!");
 		resposta.send(retorno);
 	});
 }
