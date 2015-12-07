@@ -10,7 +10,7 @@
 		_db.msgAtual = "";
 		
 		var urls = {};
-		urls.base = "http://localhost:3000/";
+		urls.base = "http://192.168.0.153:3000/";
 		urls.listarMensagens = urls.base + "message";
 		urls.listarUsuarios = urls.base + "usuario";
 		urls.logarUsuario = urls.base + "usuario";
